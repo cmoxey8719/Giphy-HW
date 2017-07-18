@@ -1,0 +1,12 @@
+.btn{
+	background-color: #777;
+	color: white;
+}
+#pictures{
+	overflow: hidden;
+	width: 600px;
+}
+#pictures div{
+	float: left;
+	width: 33%;
+}
