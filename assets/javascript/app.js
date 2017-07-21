@@ -44,7 +44,7 @@ $(document).ready(function(){
     	// Grabbing and storing the data-food property value from the button
     	var food = $(this).attr("data-food");
     	// Constructing a queryURL using the animal name
-    	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+    	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
 		food + "&api_key=dc6zaTOxFJmzC&limit=10";
 
   		// Performing an AJAX request with the queryURL
