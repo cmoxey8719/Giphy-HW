@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,28 +11,53 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4 title">
+				<p>Food GIF Search</p>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
 
 	<!-- container of buttons -->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
   					<div class="panel-heading">Food Ideas</div>
   						<div class="panel-body">
 							<div id="foodButtons"></div>
 						</div>
 				</div>
 			</div>
+
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">Add Food</div>	
+  					<div class="panel-body">
+    					<form id="food-form">
+							<input  type="text" id="food-input">
+							<br><br>
+							<!-- Button triggers new button to be added -->
+							<input id="add-food" class="btn btn-primary" type="submit" value="Add a Food">
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-default">
-					<div class="panel-heading">Food</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">Food Images</div>
 					<div class="panel-body">
 							<!-- container of gif's from button click -->
 						<div id="pictures"></div>
@@ -39,19 +65,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
-				<div class="panel panel-default">
-  					<div class="panel-heading">Add Food</div>	
-  					<div class="panel-body">
-    					<form id="food-form">
-							<input  type="text" id="food-input">
-							<br><br>
-							<!-- Button triggers new button to be added -->
-							<input id="add-food" class="btn" type="submit" value="Add a Food">
-						</form>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 
